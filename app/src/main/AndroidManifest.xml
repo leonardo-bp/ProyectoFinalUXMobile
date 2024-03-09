@@ -16,8 +16,11 @@
             android:name=".TerminosActivity"
             android:exported="false" />
         <activity
-            android:name=".RegistrarseActivity"
+            android:name=".InicioActivity"
             android:exported="false" />
+        <activity
+            android:name=".RegistrarseActivity"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

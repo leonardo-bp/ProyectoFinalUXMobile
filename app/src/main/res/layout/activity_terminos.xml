@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TerminosActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_mobile"/>
+
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="93dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/termsTextView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@null"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Téminos y condiciones"
+        android:inputType="text"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@id/backgroundImageView"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@id/backgroundImageView"
+        app:layout_constraintTop_toBottomOf="@id/iconImageView" />
+
+    <TextView
+        android:id="@+id/termsContentTextView"
+        android:layout_width="380dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@null"
+        android:gravity="center"
+        android:hint="La aplicación de alarmas de apuestas deportivas proporciona notificaciones  \n
+sobre eventos deportivos y resultados, pero no garantiza la precisión ni la  \n
+disponibilidad constante de la información. \n
+El uso de la aplicación implica la aceptación de los riesgos asociados con  \n
+las apuestas deportivas, incluida la posibilidad de pérdida de dinero. \n
+Se recomienda el juego responsable. La aplicación no se hace responsable \n
+de las decisiones tomadas por los usuarios basadas en la información \n
+proporcionada. \n
+Los usuarios son responsables de sus propias apuestas y acciones. \n
+Queda prohibido el uso de la aplicación para menores de edad o en \n
+jurisdicciones donde las apuestas deportivas sean ilegales.  \n
+Los usuarios son responsables de cumplir con las leyes locales. \n
+La aplicación puede contener enlaces a sitios web de terceros. \n
+No nos responsabilizamos por el contenido o las prácticas de privacidad \n
+de estos sitios. \n
+Nos reservamos el derecho de modificar o discontinuar la aplicación en \n
+cualquier momento sin previo aviso. \n
+Los usuarios aceptan que la información personal proporcionada puede ser \n
+utilizada de acuerdo con nuestra política de privacidad. \n
+Cualquier disputa relacionada con el uso de la aplicación se regirá por \n
+las leyes del lugar donde se haya registrado la empresa. \n
+Al utilizar esta aplicación, los usuarios aceptan estos términos y \n
+condiciones en su totalidad."
+        android:inputType="text"
+        android:textColorHint="@android:color/black"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@id/backgroundImageView"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@id/backgroundImageView"
+        app:layout_constraintTop_toBottomOf="@id/termsTextView" />
+
+    <Button
+        android:id="@+id/aceptarTerminosButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#067B8A"
+        android:text="Aceptar téminos y condiciones"
+        app:layout_constraintEnd_toEndOf="@id/backgroundImageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/backgroundImageView"
+        app:layout_constraintTop_toBottomOf="@id/termsContentTextView" />
+
+    <ImageView
+        android:id="@+id/backButtonTerminos"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        android:src="@drawable/flecha_regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

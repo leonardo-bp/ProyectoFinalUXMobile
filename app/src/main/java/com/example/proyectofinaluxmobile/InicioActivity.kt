@@ -10,6 +10,13 @@ class InicioActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
 
+        val betplayButtonInicio: Button = findViewById(R.id.betplayButtonInicio)
+
+        betplayButtonInicio.setOnClickListener {
+            val intent = Intent(this, BetPlayActivity::class.java)
+            startActivity(intent)
+        }
+
         val cerrarSesionButtonInicio: Button = findViewById(R.id.cerrarSesionButtonInicio)
 
         cerrarSesionButtonInicio.setOnClickListener {
